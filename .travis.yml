@@ -12,6 +12,7 @@ before_script:
   - |
      MY_ALP=$(docker container run --rm $IMAGE_NAME cat /etc/alpine-release)
      MY_VER=$(docker container run --rm $IMAGE_NAME sh -c 'F="/etc/githash"; if [ -f "$F" ]; then cat "$F"; fi')$ALP
+     echo "Checking if update needed..."
      echo "Git    version is $VER"
      echo "Docker version is $MY_VER"
      if [ -z $NOW ] && [ "$MY_VER" = "$VER" ]; then travis_terminate 0; fi
