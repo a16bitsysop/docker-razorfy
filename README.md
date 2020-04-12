@@ -18,7 +18,7 @@ Github Repository: [https://github.com/a16bitsysop/docker-razorfy](https://githu
 
 
 ## Examples
-**To run a container exposing razorfy port with verbose logging
+**To run a container exposing razorfy port with verbose logging**
 ```
 #docker container run -p 11342:11342 -d --name razorfy --env RAZORFY_BINDADDRESS=0.0.0.0 --env RAZORFY_DEBUG=1 a16bitsysop/razorfy
 ```
