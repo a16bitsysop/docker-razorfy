@@ -9,7 +9,6 @@ RUN addgroup razor 2>/dev/null \
 
 WORKDIR /home/razor/.razor
 COPY --chown=razor:razor razor-agent.conf .
-COPY --chown=razor:razor profile ../.profile
 
 WORKDIR /usr/local/bin
 COPY entrypoint.sh .

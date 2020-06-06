@@ -1,1 +1,0 @@
-export RAZORFY_BINDADDRESS=0.0.0.0
