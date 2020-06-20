@@ -5,10 +5,10 @@ env:
 
 before_script:
   - ALP=$(version.py -b)
-  - VER="$(wget --spider -S https://raw.githubusercontent.com/$url 2>&1 | grep "ETag:" | sed -e s+ETag:.W/++g -e s+\"++g -e 's+^[[:space:]]*++')$ALP"
+  - VER="$(version.py -g $url)$ALP"
   - TAG="-t $IMAGE_NAME:$(date +%d%m%g)-alpine$ALP"
   - MY_ALP=$(docker container run --rm $IMAGE_NAME cat /etc/alpine-release)
-  - MY_VER="$(version.py -d $IMAGE_NAME)"
+  - MY_VER="$(version.py -f $IMAGE_NAME)$MY_ALP"
   - |
      echo "Checking if update needed..."
      echo "Git    version is $VER"
