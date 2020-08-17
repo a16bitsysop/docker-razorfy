@@ -7,22 +7,7 @@ echo '$TIMEZONE=' $TIMEZONE
 echo
 
 NME=razor
-
-if [ -n "$TIMEZONE" ]
-then
-  echo "Waiting for DNS"
-  ping -c1 -W60 google.com || ping -c1 -W60 www.google.com || ping -c1 -W60 google-public-dns-b.google.com
-  apk add --no-cache tzdata
-  if [ -f /usr/share/zoneinfo/"$TIMEZONE" ]
-  then
-    echo "Setting timezone to $TIMEZONE"
-    cp /usr/share/zoneinfo/"$TIMEZONE" /etc/localtime
-    echo "$TIMEZONE" > /etc/timezone
-  else
-    echo "$TIMEZONE does not exist"
-  fi
-  apk del tzdata
-fi
+set-timezone.sh "$NME"
 
 echo "export RAZORFY_BINDADDRESS=0.0.0.0" > /home/"$NME"/.profile
 [ -n "$RAZORFY_DEBUG" ] && echo "export RAZORFY_DEBUG=$RAZORFY_DEBUG" >> /home/"$NME"/.profile
