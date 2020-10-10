@@ -1,7 +1,8 @@
 FROM alpine:3.12
-LABEL maintainer "Duncan Bellamy <dunk@denkimushi.com>"
+LABEL maintainer="Duncan Bellamy <dunk@denkimushi.com>"
 ENV url=HeinleinSupport/razorfy/master/razorfy.pl
 
+# hadolint ignore=DL3018
 RUN addgroup razor 2>/dev/null \
 && adduser -D --gecos "razor antispam" --ingroup razor razor 2>/dev/null \
 && mkdir /home/razor/.razor && chown razor:razor /home/razor/.razor \

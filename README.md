@@ -3,8 +3,8 @@ Alpine based Dockerfile to install [razorfy](https://github.com/HeinleinSupport/
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/a16bitsysop/razorfy.svg?style=flat-square)](https://hub.docker.com/r/a16bitsysop/razorfy/)
 [![Docker Stars](https://img.shields.io/docker/stars/a16bitsysop/razorfy.svg?style=flat-square)](https://hub.docker.com/r/a16bitsysop/razorfy/)
-[![](https://images.microbadger.com/badges/version/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own commit badge on microbadger.com")
+[![Version](https://images.microbadger.com/badges/version/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own version badge on microbadger.com")
+[![commit](https://images.microbadger.com/badges/commit/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own commit badge on microbadger.com")
 
 RAZORFY_BINDADDRESS is already set to 0.0.0.0 to listen to all interfaces, this is done in the razor .profile file.
 
