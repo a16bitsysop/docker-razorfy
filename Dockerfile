@@ -14,7 +14,7 @@ COPY --chown=razor:razor razor-agent.conf .
 WORKDIR /usr/local/bin
 COPY travis-helpers/set-timezone.sh entrypoint.sh ./
 
-SHELL ["/bin/sh", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN wget -S https://raw.githubusercontent.com/$url 2>&1 | grep "ETag:" | sed -e s+\"++g -e 's+.*ETag:\ ++' > /etc/githash \
 && chmod +x razorfy.pl
 
