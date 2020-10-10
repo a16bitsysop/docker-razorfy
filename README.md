@@ -5,6 +5,7 @@ Alpine based Dockerfile to install [razorfy](https://github.com/HeinleinSupport/
 [![Docker Stars](https://img.shields.io/docker/stars/a16bitsysop/razorfy.svg?style=flat-square)](https://hub.docker.com/r/a16bitsysop/razorfy/)
 [![Version](https://images.microbadger.com/badges/version/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own version badge on microbadger.com")
 [![commit](https://images.microbadger.com/badges/commit/a16bitsysop/razorfy.svg)](https://microbadger.com/images/a16bitsysop/razorfy "Get your own commit badge on microbadger.com")
+[![GitHub Super-Linter](https://github.com/a16bitsysop/docker-razorfy/workflows/Super-Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 RAZORFY_BINDADDRESS is already set to 0.0.0.0 to listen to all interfaces, this is done in the razor .profile file.
 
