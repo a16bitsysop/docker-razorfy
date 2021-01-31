@@ -6,7 +6,7 @@ ENV url=HeinleinSupport/razorfy/master/razorfy.pl
 RUN addgroup razor 2>/dev/null \
 && adduser -D --gecos "razor antispam" --ingroup razor razor 2>/dev/null \
 && mkdir /home/razor/.razor && chown razor:razor /home/razor/.razor \
-&& apk add --no-cache razor
+&& apk add -u --no-cache razor
 
 WORKDIR /home/razor/.razor
 COPY --chown=razor:razor razor-agent.conf .
