@@ -1,4 +1,7 @@
 # docker-razorfy
+
+This repository has moved to: https://gitlab.com/container-email/razorfy
+
 Alpine based Dockerfile to install [razorfy](https://github.com/HeinleinSupport/razorfy) as a docker container.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/a16bitsysop/razorfy.svg?style=plastic)](https://hub.docker.com/r/a16bitsysop/razorfy/)
